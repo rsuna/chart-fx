@@ -120,7 +120,7 @@ public abstract class Chart extends Region implements EventSource {
     // Inner canvas for the drawn content
     protected final ResizableCanvas canvas = new ResizableCanvas();
     protected final Pane canvasForeground = new Pane();
-    protected final Group pluginsArea = Chart.createChildGroup();
+    protected final Pane pluginsArea = new Pane(); // was `Chart.createChildGroup()` but this leads to wrong coordinate transformations with the new layout
 
     // Area where plots get drawn
     protected final Pane plotBackground = new Pane();
