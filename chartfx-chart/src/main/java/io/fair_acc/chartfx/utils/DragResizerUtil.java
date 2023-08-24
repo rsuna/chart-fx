@@ -318,9 +318,9 @@ public class DragResizerUtil {
 
         public boolean isSouth() {
             switch (this) {
-            case NW_RESIZE:
-            case N_RESIZE:
-            case NE_RESIZE:
+            case SW_RESIZE:
+            case S_RESIZE:
+            case SE_RESIZE:
                 return true;
             default:
                 return false;
